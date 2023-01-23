@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h, initial-scale=1.0">
-    <title>Document</title>
+    <title>O Código Secreto</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header> <H1>O código Secreto</H1> </header>
+    <main>
+    <div class="textExplication">
+        <!-- Explicação do funcionamento -->
     <h3>Você já imaginou criar um código secreto?</h3>
     <p>No campo abaixo você pode codificar ou descodificar o texto que quiser, utilizando a Base 64 ou a Cifra de César.</p>
     <p>Para isso, basta selecionar qual código quer usar, se quer codificar ou descodificar, e digitar o texto que deseja que seja transformado.</p>
-    <p>Caso você opte pela Cifra de César, você precisa escolher a rotação.</p>
+    <p>Caso você opte pela Cifra de César, uma nova caixa ira aparecer, e nela você precisa escolher a rotação da codificação do código.</p>
     <p>Para descodificar você precisa saber o número da rotação do código que está criptografado.</p>
     <h4>Boa Diverão!!</h4>
+    </div>
+<!-- Caixa para a seleção do tipo de codificação -->
     <div class="select">
         <select>
             <option selected disabled>Selecione um código</option>
@@ -22,10 +27,13 @@
             <option value="valor2">Base 64</option>
         </select>
     </div>
+    <!-- Entrada do texto  -->
     <div class="textArea">
-        <div><p>Digite seu texto aqui</p></div>
-        <div id="textArea"><textarea name="entrada" id="entrada" ></textarea></div>
+        <div><p id="textoEntada">Digite seu texto aqui</p></div>
+        <div id="textArea"><textarea name="entrada" id="entrada" class="entrada"></textarea></div>
+        <span id="spanEntrada"></span>
     </div>
+    <!-- Área de Escolha do que o usuario deseja fazer -->
     <div class="radioButtons">
         <div class="radioButtonsConfig">
         <input type="radio" name="cod" id="cod">
@@ -35,13 +43,14 @@
         </div>
     </div>
     <div class="buttonConfig">
-        <input type="button" id="button" >
+        <input type="button" id="button" value="Enviar" >
     </div>
+    <!-- Caixa de saida do texto -->
     <div class="saida">
-        <p>Texto Final</p>
+        <p id="textoSaida">Texto Final</p>
         <span id="textSaida"></span>
     </div>
-
+</main>
 <footer>Copyright © 2022 Lígia Baptista – ALL RIGHTS RESERVED.</footer>
     <script src="./assets/js/script.js"></script>
 </body>
