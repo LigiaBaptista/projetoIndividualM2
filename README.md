@@ -1,6 +1,6 @@
 <h1>Projeto Individual Módulo 2</h1>
 <h2>Mensagem Oculta</h2>
-<h3>O que é o projeto faz?</h3>
+<h3>O que o projeto faz?</h3>
 <p>Criar uma mensagem codificada ou descodifica a partir da escolha do algoritmo a ser utilizado.</p>
 
 ## Tecnologias utilizadas
